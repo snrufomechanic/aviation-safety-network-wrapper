@@ -39,7 +39,7 @@ def get_page_info(year):
 
 
 def get_accidents(year, page_number):
-    #!NOTE: Dünya Savaşlarının olduğu yıllar uzun sürüyor. y
+    #!NOTE: Dünya Savaşlarının olduğu yıllar uzun sürüyor. her page için async func çağırılabilir.
     if page_number == 1:
         url = f'http://aviation-safety.net/wikibase/dblist.php?Year={year}'
     else:
@@ -86,7 +86,7 @@ def get_accidents(year, page_number):
                     'fatalities': fatalities,
                     'location': location,
                     'flag': flag,
-                    'dmg': dmg
+                    'dmg': dmg #!TODO: çekilen stringlerde ('....') yapısı olduğu zaman exel'de kaymalara neden oluyor.
                 }
 
                 print(accident_info)
