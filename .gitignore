@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# User-specific files
+*.vscode/
+*.idea/
+
+# Environment variables
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Database
+*.db
+
+# Other
+*.pyc
+.DS_Store
